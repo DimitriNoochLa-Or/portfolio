@@ -1,0 +1,361 @@
+body{
+  background-color: black;
+}
+
+.h2{
+  color:white;
+  text-align:center;
+}
+
+.aboutme{
+	text-align: center;
+	color:white;
+	background-color: black;
+  border: 5px solid red;
+	}
+  .div1 {
+    border-style: solid;
+    border-width: 5px;
+    padding: 30px;
+  }
+   
+  .container{
+    border-color: blue;
+    padding-left: 50px;
+    height: 300px;
+
+    
+  }
+  .row{
+    border-color: red;
+  }
+	
+ /* // Animate all the things*/  
+*  
+  transition: all ease-in-out .4s
+  -webkit-transition: all ease-in-out .4s
+
+/*// Hamburger styles */   
+.nav-tab
+  width: 30px
+  height: 40px
+  a
+    cursor: pointer
+    display: block
+    height: 100%
+    width: 100%
+  span
+    background: #e1e7f4
+    display: block
+    width: 30px
+    height: 4px
+    margin-bottom: 3px
+/*  // Hamburger animate on hover
+*/  &:hover
+    span
+      &.first-child
+        width: 26px
+      &.second-child
+        width: 18px
+      &.third-child
+        width: 22px
+      &.fourth-child
+        width: 24px
+ 
+/*// Click to open
+*/body.open .nav-tab
+  span
+    &.first-child
+      width: 30px
+      margin-top: 11px
+      transform: rotate(-45deg)
+      -webkit-transform: rotate(-45deg)
+    &.second-child
+      width: 0px
+      opacity: 0
+    &.third-child
+      width: 0px
+      opacity: 0
+    &.fourth-child
+      width: 30px
+      margin-top: -21px
+      transform: rotate(45deg)
+      -webkit-transform: rotate(45deg)        
+        
+/*// Background
+*/body
+  height: 100%
+  width: 100%
+  background-color: #3f404f
+  
+/*// Position nav-tab
+*/.nav-tab
+  position: absolute
+  left: 50%
+  margin-left: -20px
+  top: 50%
+  margin-top: -15px
+
+@base-grey: #333;
+
+
+
+body {
+  margin: 0;
+  background-color: @base-grey;
+  padding-top: 6rem;
+  font-family: roboto;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.buttons {
+  text-align: center;
+  font-size:15px;
+}
+
+// Button frame
+.btn {
+  padding: .875rem 1.2rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  display: inline-block;
+  outline: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 6px;
+  -webkit-box-shadow: rgba(0,0,0,.4);
+  margin: 0 auto;
+  float: none;
+}
+    // Assign brand colors
+    .btn.instagram {
+      background-color: blue;
+      border-color: ;
+    }
+
+    .btn.google-plus {
+      background-color: red;
+      border-color: red;
+    }
+
+    .btn.linkedin {
+      background-color: blue;
+      border-color: blue;
+    }
+
+    .btn.github {
+      background-color: gray;
+    border-color: gray;
+    }
+
+    .btn.facebook {
+      background-color: blue;
+      border-color: blue;
+    }
+
+button span,
+span {
+  top: 0px;
+  position: relative;
+  transition: 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+    button:hover span.label,
+    a.btn:hover span.label {
+      top: -40px;
+      transition: 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+    }
+
+// Override inline-block from original
+.fa {
+  position: absolute;
+}
+
+
+.fa.fa-google-plus:before,
+.fa.fa-instagram:before,
+.fa.fa-linkedin:before,
+.fa.fa-github:before,
+.fa.fa-facebook:before {
+  top: 100px;
+  left: -50%;
+  text-align: center;
+  position: relative;
+  transition: 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+button:hover .fa.fa-google-plus:before,
+button:hover .fa.fa-instagram:before,
+a.btn:hover .fa.fa-google-plus:before, 
+a.btn:hover .fa.fa-twitter:before,
+a.btn:hover .fa.fa-linkedin:before,
+a.btn:hover .fa.fa-github:before,
+a.btn:hover .fa.fa-facebook:before {
+  top: 1rem;
+  left: -50%;
+  transition: 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+/*background picture*/
+$side:50px; 
+$colors:#0082c8 #167c80 #a2c5bf #e54b4b #72616e #e8846b;
+$time:7s;
+$op:true; // control opacities nth()
+
+%center { 
+  position: absolute;
+  margin:auto;
+  top: 0;right: 0;bottom: 0;left: 0;
+}
+
+*, *:before, *:after {  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+body { 
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.wrapper {
+  @extend %center;
+  width: $side*7+7*20;
+  height: $side*7+5*20;
+}
+
+.container {
+  width: 600px;
+  font-size: 0px;
+}
+
+// cube
+
+.cube {
+  width:$side;
+  height:$side;
+  transform-style: preserve-3d;
+  perspective: 9000px;
+  display: inline-block;
+  /* 
+    // In case need to add txt inside cube faces
+    text-align: center;
+    line-height: $side;
+    font-weight: 300;
+    color:rgba(255,255,255,0.5);
+    font-size: $side/1.2;
+    padding: 0;
+  */
+  margin-left: $side/2.5; 
+  margin-top: $side/5;
+  
+  transform: rotateX(-25deg) rotateY(45deg) rotateZ(0deg);
+  animation: rot $time infinite ease-in-out; 
+  
+  .container:nth-child(even) & {
+    &:first-child{ margin-left: -15px; }
+    &:nth-of-type(4), 
+    &:nth-of-type(5){ 
+      animation-delay:0s; 
+      @if($op) { opacity: .2; }
+    }
+    &:nth-of-type(3), 
+    &:nth-of-type(6){ 
+      animation-delay:$time/70; 
+      @if($op) { opacity: .4; }
+    }
+    &:nth-of-type(2), 
+    &:nth-of-type(7){ 
+      animation-delay:$time/70*2; 
+      @if($op) { opacity: .6; }
+    }
+    &:nth-of-type(1),
+    &:nth-of-type(8){ 
+      animation-delay:$time/70*3; 
+      @if($op) { opacity: .8; }
+    }
+  } 
+ 
+  .container:nth-child(odd) & {
+    &:nth-of-type(4){ 
+      animation-delay:0s; 
+      @if($op) { opacity: .2; }  
+    }
+    &:nth-of-type(3), 
+    &:nth-of-type(5){ 
+      animation-delay:$time/70; 
+      @if($op) { opacity: .4; }
+    }
+    &:nth-of-type(2), 
+    &:nth-of-type(6){ 
+      animation-delay:$time/70*2; 
+      @if($op) { opacity: .6; }
+    }
+    &:nth-of-type(1),
+    &:nth-of-type(7){ 
+      animation-delay:$time/70*3; 
+      @if($op) { opacity: .8; }  
+    }
+  }
+ 
+}
+
+.side{
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  backface-visibility: hidden;
+  $c:nth($colors, random(6));
+  @for $i from 1 to 7 {
+    &:nth-child(#{$i}){
+      background-color: shade($c, $i * 5% );
+    } 
+  }
+}
+
+.front{ 
+  transform: translate3d(0, 0, $side/2) }
+.back { 
+  transform: rotateY(180deg) translate3d(0, 0, $side/2); }
+.left {
+  transform: rotateY(-90deg) translate3d(0, 0, $side/2) }
+.right { 
+  transform: rotateY(90deg) translate3d(0, 0, $side/2) }
+.top { 
+  transform: rotateX(90deg) translate3d(0, 0, $side/2) }
+.bottom { 
+  transform: rotateX(-90deg) translate3d(0, 0, $side/2) } 
+
+
+// animation
+
+@keyframes rot {
+  10%, 15% {
+    transform: rotateX(-25deg) rotateY(45deg) rotateZ(90deg);
+  } 
+  25%,30% {
+    transform: rotateX(-25deg) rotateY(45deg) rotateZ(90deg) rotateY(90deg);
+  }
+  40%,45% {
+    transform: rotateX(-25deg) rotateY(45deg) rotateZ(90deg) rotateY(90deg) rotateX(-90deg);
+  }
+  55%, 60% {
+    transform: rotateX(-25deg) rotateY(45deg) rotateZ(90deg) rotateY(90deg) rotateX(-90deg) rotateY(90deg);
+  }
+  70%, 75% {
+    transform: rotateX(-25deg) rotateY(45deg) rotateZ(90deg) rotateY(90deg) rotateX(-90deg) rotateY(90deg) rotateX(-90deg);
+  }
+  85% {
+    transform: rotateX(-25deg) rotateY(45deg) rotateZ(0deg);
+  }
+}
