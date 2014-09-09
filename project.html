@@ -6,29 +6,28 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="css/project.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/social.css">
+  <link rel="stylesheet" type="text/css" href="css/hamburger.css">
 </head>
 <body>
-<title> MY WEbpage</title>
- <header class="header">
-   <nav>
+<title> MY Webpage</title>
+  <div class="stuck-head">
+    <a class="nav-btn" id="nav-open" href="#sidebar"menu><span>menu</span></a>
+  </div>
+  <div id="leonardo">
+     <div id="sidebar">
+           <nav class="navigation">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#home">Blog</a></li>
+              <li><a href="#home">About Us</a></li>
+              <li><a href="#home">Contact Us</a></li>
+            </ul>
+          </nav>
+    </div>
+  </div> 
   
-    <input id="nav" type="checkbox" />
-  
-
-    <label for="nav">
-      <b><i></i><i></i><i></i></b>
-    </label>
-  
-  <menu>
-    <li ><a href="#">home</a></li>
-    <li ><a href="#about">about me</a></li>
-    <li ><a href="#project">project</a></li>
-    <li ><a href="#music">music</a></li>
-    
-  </menu>
-  </nav>
-  </header>
-  <a class="nav-logo" href="#">Dimitri Nooch La-Or</a>
   <div class="menu-filler"></div>
   <div class="visual">
     
@@ -42,38 +41,50 @@
 
   
 <!--Practice content-->
-    <a name=about>
-    <div class=content-box-1>
+    <a name="about">
+    <div id="aboutmebox">
             <header> <h2>About Me</h2></header>
-            My name is Dimitri Nooch La-Or.I am a highschool student. My main passion is music. I play 4 instruments Drums,Guitar,Bass and Piano. I Have two younger sisters. One is in middle school and the other elementary.
-
+            My name is Dimitri Nooch La-Or.I am a highschool student. My main passion is music. I play 4 instruments Drums,Guitar,Bass and Piano. I Have two younger sisters. One is in middle school and the other elementary. I grew up in los angeles. I moved to pasadena when i was 5. I later moved to the east coast when i was 12 and moved back into sierra madre when i was 14.
     </div>
     </a>
-
-    <div class=content-box-2>
-        <a name="project">
-        <div class="menu-filler">
-         <header class="music"> <h1 > Projects </h1> </header>
+    <a name="project">
+    <div id="projectbox">
+        <div>
+         <header> <h1 > Projects </h1> </header>
            The projects i have worked on are Cookie Clicker, Brick breaker and two other websites</p>
         
           
         </div>
 
             
-        </a>
     </div>
+    </a>
    
 
-    <div class=content-box-3>
+    <div id="musicbox">
         <a name="music">
           <div class="menu-filler">
           </div>
           <header class="music"> <h1 class=" h1">  Music</h1> </header>
           
+          
         </a>
     </div>
+    <section>
+          <div class="social">
+          <a href="http://facebook.com/Dimitri Storm" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+          <h2 class="move"> FaceBook</h2>
+          <a href="https://instagram.com/musician_for_life21" class="link instagram" target="_parent"><span class="fa fa-instagram"></span></a>          <h2 class="move"> instagram</h2>
 
+          <a href="https://plus.google.com/u/0/110920140203432541996/posts" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>          <h2 class="move"> google plus</h2>
+
+    </div>
+    </section>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" href="js/bootstrap.js"></script>
 <script type="text/javascript" href="js/bootstrap.min.js"></script>
+<script type="text/javascript" href="js/hamburger.js"></script>
+
+
 </body>
 </html>
